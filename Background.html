@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGrounnd Color</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 500px;
+        }
+        div{
+            background-color: blueviolet;
+        }
+        #bg-color {
+            background-color: teal;
+        }
+        #bg-image{
+            box-shadow: 0 0 10px black;
+            padding: 15px;
+            width: 500px;
+            background-image: url("../CSS/Nature\ Image.jpg");
+        }
+        #bg-repeat{
+            width: 700px;
+            height: 600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/sprout\ image.jpg");
+        }
+        #bg-norepeat{
+            width:700px;
+            height: 600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/sprout\ image.jpg");
+            background-repeat: no-repeat;
+        }
+        #bg-repeat-x{
+            width:700px;
+            height: 600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/sprout\ image.jpg");
+            background-repeat: repeat-x;
+            
+        }
+        #bg-repeat-y{
+            width:700px;
+            height:600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/sprout\ image.jpg");
+            background-repeat:repeat-y;
+        }
+        #bg-pos{
+            width:700px;
+            height:600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/sprout\ image.jpg");
+            background-repeat:no-repeat;
+            background-position: top right;
+        }
+        #bg-scroll{
+            width:700px;
+            height:600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/Flower\ Image.jpg");
+            background-repeat:no-repeat;
+            background-attachment: scroll;
+        }
+        #bg-fixed{
+            width:700px;
+            height:600px;
+            box-shadow: 0 0 10px black;
+            background-image: url("../CSS/Flower\ Image.jpg");
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+        }
+        #bg{
+            width: 700px;
+            height: 600px;
+            background: hotpink url("../CSS/sprout\ image.jpg") no-repeat fixed center;
+        }
+        #bg-size{
+            width: 500px;
+            height: 400px;
+            background-image: url("../CSS/Tech\ image.jpg") ;
+            background-size: cover;
+            box-shadow: 0 0 10px black;
+        }
+        #Gradient{
+             width: 500px;
+            height: 500px;
+            background:linear-gradient(45deg,black,red,pink,yellow);
+            box-shadow: 0 0 10px black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background Color</h1>
+    <div id="bg-color">
+        <h2>I am with Teal Color background</h2>
+    </div>
+    <h1>Background Image</h1>
+    <div id="bg-image">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus dolorum laudantium veritatis amet doloribus
+            rerum vitae perspiciatis minima voluptas recusandae harum porro temporibus sint quos,
+            adipisci architecto incidunt quas aliquid? Pariatur, perspiciatis saepe consequatur et facere doloribus
+            laudantium magni nisi.</p>
+    </div>
+
+    <h1>Background for Small Image is Repeated</h1>
+    <div id="bg-repeat"></div>
+    <h1>Background No-Repeat</h1>
+    <div id="bg-norepeat"></div>
+    <h1>Background Repeat-x</h1>
+    <div id="bg-repeat-x"></div>
+    <h1>Background Repeat-y</h1>
+    <div id="bg-repeat-y"></div>
+
+    <h1>Background position for displaying image at top right </h1>
+    <h1>we can also display image at any position like right,center,bottom left,15px,etc</h1>
+    <div id="bg-pos"></div>
+
+    <h1>Background Attachment :fixed</h1>
+    <div id="bg-fixed"></div>
+    <h1>Background Attachment :Scroll</h1>
+    <div id="bg-scroll"></div>
+
+    <h1>Shortcut Key For applying all Background Things</h1>
+    <h1> Syntax: background:color image repeat attachment position</h1>
+    <div id="bg">   </div>
+
+    <h1>Background Size</h1>
+    <div id="bg-size"></div>
+
+    <h1>Gradient</h1>
+    <h1>Syntax:linear-gradient(degree,clr1,clr2,....,clrN)</h1>
+    <div id="Gradient"></div>
+</body>
+
+</html>
