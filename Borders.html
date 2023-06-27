@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        div {
+            background-color: lightgreen;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            width: 800px;
+            margin-bottom: 50px;
+        }
+
+        #border-all {
+            border: 10px solid limegreen;
+        }
+
+        #b-style {
+            border-color: black;
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        #b-single {
+            border-left: 10px solid black;
+        }
+
+        #b-round-all {
+            border: 10px solid black;
+            border-radius: 80px;
+            /* We can also mention in % as border-radius:30%; etc*/
+        }
+
+        #b-round-single {
+            border: 10px solid black;
+            border-top-left-radius: 50px;
+        }
+
+        #b-round-two {
+            border: 10px solid black;
+            border-radius: 50px 0 50px 0;
+        }
+
+        #b-ring {
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 20px black;
+            border-radius: 50%;
+            border-top: 25px solid greenyellow;
+            border-bottom: 25px solid greenyellow;
+            border-left: 25px solid slategray;
+            border-right: 25px solid slategray;
+            background: linear-gradient(45deg, darkslategray, limegreen)
+        }
+
+        #b-circle {
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 20px black;
+            border-radius: 50%;
+            background-color: aqua;
+            border: 15px solid black;
+        }
+
+        #b-circle {
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 20px black;
+            border-radius: 50%;
+            background-color: aqua;
+            border: 15px solid black;
+        }
+
+        #b-frame {
+            height: 200px;
+            width: 200px;
+            box-shadow: 0 0 20px black;
+            border-top: 25px solid greenyellow;
+            border-bottom: 25px solid greenyellow;
+            border-left: 35px solid darkslategrey;
+            border-right: 35px solid darkslategrey;
+        }
+
+        #utube {
+            height: 300px;
+            width: 500px;
+            box-shadow: 0 0 20px black;
+            border-top: 25px solid greenyellow;
+            border-bottom: 25px solid greenyellow;
+            border-left: 35px solid darkslategrey;
+            border-right: 35px solid darkslategrey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Border all sides</h1>
+    <div id="border-all">
+        <h2>Syntax => border : width style color;</h2>
+    </div>
+
+    <h1>Border Styles</h1>
+    <div id="b-style">
+        <h2>Solid Border</h2>
+        <h3>We Can also Apply Different Styles like dotted,dashed,double lines,etc</h3>
+    </div>
+
+    <h1>Border for single side</h1>
+    <div id="b-single">
+        <h2>Border Left</h2>
+        <h3>We can also Apply Single side Border any side You want</h3>
+    </div>
+
+    <h1>Border Rounded All Sides</h1>
+    <div id="b-round-all">
+        <h2>Border Rounded all</h2>
+    </div>
+
+    <h1>Border Rounded Single side</h1>
+    <div id="b-round-single">
+        <h2>Border Single Rounded for top left side </h2>
+        <h3>We can apply any sides</h3>
+    </div>
+
+    <h1>Border Round For Two sides</h1>
+    <div id="b-round-two">
+        <h2>Border Round Two sides </h2>
+        <h5>Syntax=> border-radius: Topleft &nbsp; Topright &nbsp; Bottomright &nbsp; Bottomleft </h5>
+        <h5>We can enter Value of Topleft etc in px or %</h5>
+    </div>
+
+    <h2>Circle</h2>
+    <section id="circle"></section>
+
+    <h2> Border Circle</h2>
+    <section id="b-circle"></section>
+
+    <h2> Border Frame</h2>
+    <section id="b-frame"></section>
+
+    <h2> Border Ring</h2>
+    <section id="b-ring"></section>
+
+    <h2> Custom Border</h2>
+    <section id="utube">
+        <iframe width="500" height="300" src="https://www.youtube-nocookie.com/embed/a4lf6GA7SL0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+
+</body>
+
+</html>
