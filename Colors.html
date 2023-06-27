@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <style>
+        body {
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            font-family: "Comic Sans MS", sans-serif;
+            width: 800px;
+            margin: 50px auto;
+        }
+
+        .textual {
+            box-shadow: 0 0 10px black;
+            /*Textual Color*/
+            color: white;
+            background-color: black;
+        }
+
+        .rgb {
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 255, 0);
+            /*rgb colors range from 0-255,rgb(255,255,255) is white,rgb(0,255,0) is green */
+        }
+
+        .hsl {
+            box-shadow: 0 0 10px hsl(0, 0%, 0%);
+            color: hsl(360, 100%, 100%);
+            background-color: hsl(150, 60%, 50%);
+            /*syntax : hsl(hue,saturation,lightness)*/
+        }
+
+        .hexa {
+            box-shadow: 0 0 10px #000000;
+            color: #ffffff;
+            background-color: #ff0000;
+            /*HEXA COLORS range from 00-FF in the form of #rrggbb*/
+        }
+
+        .rgba {
+            box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+            color: rgba(255, 255, 255,0.8);
+            background-color: rgba(0, 255,0,0.5);
+            /*Syntax : rgba(red,green,blue,alpha)*/
+        }
+        .hsla {
+            box-shadow: 0 0 10px hsla(0, 0%, 0%,1);
+            color: hsla(360, 100%, 100%,0.5);
+            background-color: hsla(350, 60%, 50%,0.6);
+            /*syntax : hsl(hue,saturation,lightness,alpha)*/
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Textual Colors</h2>
+    <div class="textual">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>RGB Colors</h2>
+    <div class="rgb">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2>HEXA Colors</h2>
+    <div class="hexa">
+        <h1>Good Morning</h1>
+    </div>
+
+    <h2> HSL(Hue ,Saturation,Lightness) Colors</h2>
+    <div class="hsl">
+        <h1>Hue : Degree on color wheel =>0-360</h1>
+        <h1>Saturation :darkness % =>0-100%</h1>
+        <h1>Lightness :ligthness % =>0-100%</h1>
+    </div>
+
+    <h1> For Transparent Colors we use RGBA & HSLA </h1>
+    <h2>RGBA Colors</h2>
+    <div class="rgba">
+        <h1>Same as RGB extra Alpha => 0-1</h1>
+        <h1>0 : Full Transparent</h1>
+        <h1>1 : Full Color</h1>
+    </div>
+
+    <h2>HSLA Colors</h2>
+    <div class="hsla">
+        <h1>Same HSLA extra Alpha => 0-1</h1>
+        <h1>0 : Full Transparent</h1>
+        <h1>1 : Full Color</h1>
+    </div>
+    <h2>Transparent Colors are used to show the background image clearly</h2>
+</body>
+
+</html>
