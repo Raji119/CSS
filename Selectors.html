@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Tag Selector */
+        h1 {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        /* Id Selector */
+        #pink {
+            background-color: hotpink;
+        
+        }
+
+        /* Group Selector of Id and Class */
+        #red,
+        .red {
+            background-color: red;
+        }
+
+        #yellow,
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .green {
+            background-color: green;
+        }
+
+        h2 {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        input {
+            /*It is a tag Selector and it applies for all input tag in form */
+            background-color: blueviolet;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            /* It is a Attribute Selector and it applies for all input tag which has type input in form  */
+            /* In place of type =text even password,submit can also be defined-*/
+            background-color: yellow;
+        }
+
+        /* Pseudo Selector */
+        input[type="number"]:focus {
+            background-color: orangered;
+            color: white;
+            font-size: 18px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: black;
+            color: white;
+            padding: 14px 25px;
+            transition: all 0.5s;
+        }
+
+        ul {
+            background-color: gray;
+        }
+
+        ul li {
+            background-color: orange;
+        }
+
+        ol li {
+            background-color: aqua;
+            color:purple;
+            font-family: "Comic Sans MS",sans-serif;
+            margin: 5px;
+        }
+        /*If we dont specify only li it will apply in both li's of ol and ul so we use mixed selector concept*/
+        ul #bgred{
+            background-color: red;
+        }
+        /* instead of writing id in css we have concepys like first child ,last child and nth child */
+        ol li:first-child{
+            background-color: blue;
+        }
+        ol li:last-child{
+            background-color: orangered;
+        }
+        ul li:nth-child(4){
+            background-color:hotpink;
+        }
+        ul li:nth-child(3){
+            background-color: seagreen;
+        }
+        ol li:nth-child(even){
+            background-color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Tag Selector-->
+    <h2>Tag Selector</h2>
+    <h1>Good Morning</h1>
+    <h1>Good Morning</h1>
+    <h1>Good Morning</h1>
+
+    <!--Id Selector-->
+    <h2>Id Selector</h2>
+    <h1 id="red">Good Morning</h1>
+    <h1 id="yellow">Good Morning</h1>
+    <!--Id's must be unique there cannot be two id's with same name-->
+
+    <!--Class Selector-->
+    <h2>Class Selector</h2>
+    <h1 class="green">Good Morning</h1>
+    <h1 class="red">Good Morning</h1>
+    <h1 class="green">Good Morning</h1>
+    <h1 class="yellow">Good Morning</h1>
+    <!--Two or More class name can be repeated-->
+
+    <h2>Demonstration of precedence of Class Selectors at styles tag</h2>
+    <h1 class="green red">Good Morning</h1>
+    <h1 class=" red green">Good Morning</h1>
+    <!--Both these statements produce green color bcoz we hv wriiten .green after .red so green will be displayed-->
+
+    <h2>Demonstration of Id has more preference than Class</h2>
+    <h1 class=" red green" id="pink">Good Morning</h1>
+
+    <!--Attribute Selector-->
+    <h2>Attribute Selector</h2>
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <!--Applying Pseudo Selector on Attribute Selector-->
+    <h2>Applying Pseudo Selector on Attribute Selector of number and reset</h2>
+    <form>
+        <label>Enter Number</label>
+        <input type="number">
+        <br>
+        <label>Password</label>
+        <input type="password">
+        <br>
+        <input type="reset" value="Reset">
+    </form>
+
+    <!--Mixed Selector-->
+    <h2> Mixed Selector</h2>
+    <ul>
+        <li id="bgred">HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>BootStrap</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>BootStrap</li>
+    </ol>
+</body>
+
+</html>
