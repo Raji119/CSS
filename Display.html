@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        h3 {
+            background-color: blueviolet;
+            padding: 5px;
+            margin: 5px;
+            display: inline;
+            color: whitesmoke;
+        }
+
+        span {
+            background-color: blueviolet;
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        a {
+            background-color: blueviolet;
+            padding: 5px;
+            color: white;
+            margin: 5px;
+            display: block;
+        }
+
+        h2 {
+            background-color: darkred;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            display: none;
+        }
+        .parent{
+            background-color: grey;
+            padding: 15px;
+        }
+        .child{
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+            width:200px;
+            display:inline-block;
+            text-align: center;
+            box-shadow: 0 0 10px black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Css Display is used to convert inline to block and viceversa    </h1>
+    <h1>Inline Elements</h1>
+    <ul>
+        <li>&lt;a&gt;</li>
+        <li>&lt;span&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;img&gt;</li>
+        <li>etc</li>
+    </ul>
+    <h1>Block Elements</h1>
+    <ul>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;div&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;section&gt;</li>
+        <li>etc</li>
+    </ul>
+    <!-- Inline -->
+    <h1>Inline</h1>
+    <div>
+        <h3>Good Morning</h3>
+        <h3>Good Afternoon</h3>
+        <h3>Good Evening</h3>
+    </div>
+    <!--Block-->
+    <h1>Block</h1>
+    <div>
+        <p>1.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <span>1. Veniam rem voluptatum fugiat eaque velit voluptates quo culpa sequi obcaecati, corporis suscipit ad
+                magnam aperiam tempora. </span>
+            <span>2.Quaerat, ad quod perferendis excepturi modi veritatis sapiente repudiandae magni aspernatur.</span>
+            <span>3.Explicabo rerum delectus dignissimos maiores</span>
+            voluptas repellendus modi, aliquid, odio debitis, ipsam amet ab.
+        </p>
+    </div>
+    <div>
+        2.<a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Courses</a>
+    </div>
+
+    <!-- None -->
+    <h1>Display None</h1>
+    <div>
+        <h2>Hello I Am Hidden</h2>
+    </div>
+
+    <!--Inline Block-->
+    <h1>Inline Block</h1>
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro blanditiis nulla pariatur fugit
+                ipsum necessitatibus? Ut quo nemo blanditiis. Illo nulla quasi cum magnam fuga consectetur provident
+                totam, eum numquam dicta neque, adipisci necessitatibus eos, sapiente ad dolores. Fugiat!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro blanditiis nulla pariatur fugit
+                ipsum necessitatibus? Ut quo nemo blanditiis. Illo nulla quasi cum magnam fuga consectetur provident
+                totam, eum numquam dicta neque, adipisci necessitatibus eos, sapiente ad dolores. Fugiat!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro blanditiis nulla pariatur fugit
+                ipsum necessitatibus? Ut quo nemo blanditiis. Illo nulla quasi cum magnam fuga consectetur provident
+                totam, eum numquam dicta neque, adipisci necessitatibus eos, sapiente ad dolores. Fugiat!</p>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat porro blanditiis nulla pariatur fugit
+                ipsum necessitatibus? Ut quo nemo blanditiis. Illo nulla quasi cum magnam fuga consectetur provident
+                totam, eum numquam dicta neque, adipisci necessitatibus eos, sapiente ad dolores. Fugiat!</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
