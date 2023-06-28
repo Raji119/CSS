@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline,Internal and External Css</title>
+    <!--External Method-->
+    <link rel="stylesheet" href="External.css">
+    <!--Internal Method-->
+    <style>
+        h2{
+            color:red;
+            background-color: green !important;
+            /* We use !important tag wn we apply styles for the same tag in External and Internal methods 
+               then their order of precedence(whether the external link is present above or below the internal style method) 
+               if external link present below the internal style method then it will get executed, to prevent it we
+               use !important in internal styles to apply  that particular styles whereever the
+                external link is present and  vice versa for internal link also */
+        }
+    </style>
+</head>
+<body>
+    <!--Inline Method only for h3-->
+    <!--Inline method overwrites Internal Method -->
+    <h1 style="color:red;background-color: yellow;">Color is done using Inline Style Method</h1>
+    
+    <h2>Color is done using Internal Style Method</h2>
+
+    <h3>Color is done using External Style Method</h3>
+        
+</body>
+</html>
