@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        body {
+            height: 4000px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 5px black;
+        }
+
+        .box1 {
+            background-color: red;
+            position: static;
+            left: 100px;
+            /*Even though we declared to move 100px from left, in output it doesnt move as position is static*/
+        }
+
+        .box2 {
+            background-color: limegreen;
+            position: relative;
+            left: 500px;
+            top: 20px;
+        }
+
+        .container,.container1 {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            left: 400px;
+        }
+        .container1{
+            z-index: 2;
+        }
+
+        .box3 {
+            background-color: yellow;
+            position: absolute;
+            left: 200px;
+        }
+
+        .box4 {
+            background-color: teal;
+            position: absolute;
+            bottom: 300px;
+            right: 100px;
+        }
+
+        .box5 {
+            background-color: purple;
+            position: fixed;
+            top: 50%;
+            right: 0;
+        }
+
+        .box6 {
+            background-color: orange;
+            position: sticky;
+            top: 0px;
+        }
+        .box7,.box9 {
+            background-color:brown;
+            position: relative;
+            left:350px;
+            top: 500px;
+        }
+        .box8,.box10{
+            background-color: blue;
+            position: relative;
+            bottom: 60px;
+            left:700px;
+        }
+        .box9{
+            z-index: 3;
+        }
+        .box10{
+            z-index: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Static: Default Position of any HTML Element (Note:If position:static; We Change its position) </h1>
+    <div class="box box1"></div>
+    <h1>Relative:This is Positioned relative to its own</h1>
+    <div class="box box2"></div>
+    <h1>Absolute:This is Positioned relative to its parent</h1>
+    <div class="container">
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <h1>Fixed:This is to fix an element in the given Position</h1>
+    <h2>The Purple Colored Box Illustrates this concept</h2>
+    <div class="box box5"></div>
+    <h1>Sticky:This is to Stick any element in the given Position</h1>
+    <h2>The Orange Colored Box Illustrates this concept</h2>
+    <div class="box box6"></div>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, rerum. Doloribus illum sapiente officia vitae
+        quam et laudantium itaque voluptates magnam alias? Nemo delectus facilis aliquam nostrum illum itaque distinctio
+        deserunt? Consectetur minus incidunt sunt inventore eius, ratione eligendi soluta consequuntur error recusandae
+        sit provident! Aperiam nesciunt ea, maiores non ducimus vero exercitationem doloremque nemo voluptatibus
+        quibusdam fugiat laboriosam fuga perferendis veritatis architecto atque inventore, assumenda obcaecati amet et
+        quisquam quas nam culpa tempore? Ut maxime, minima consectetur quos, debitis voluptate nulla numquam, asperiores
+        alias quae eligendi fugit expedita dicta ullam pariatur molestias aperiam. Sit rerum sequi est quos dolore
+        consequatur culpa natus voluptate accusantium voluptatum quo quas ipsa, consectetur adipisci eaque in! Culpa
+        deleniti laudantium atque a fuga dolores reiciendis nihil nesciunt! Ab, impedit optio adipisci totam vel vero
+        earum ipsam, quos repudiandae exercitationem delectus harum in dolor perferendis voluptatum officia minima odit
+        commodi eum fuga? Ducimus, illo cum. Hic commodi nam voluptatem sed molestiae voluptatibus nobis doloribus eaque
+        similique incidunt recusandae, vero, harum enim. Saepe cumque laudantium ab labore placeat esse, vel vero atque
+        nesciunt iste repellat necessitatibus aliquid qui? Est quaerat corrupti sunt laborum iusto rem in excepturi
+        debitis. Porro rerum quam placeat excepturi, fuga maxime voluptatum a amet nisi tempore accusamus magni in, quod
+        dolor quia necessitatibus sit. Quasi fuga voluptatem quam atque laudantium. Doloribus odio, itaque veniam
+        inventore, quibusdam molestias dolores ullam perspiciatis similique nisi cupiditate tempore illo nam aspernatur
+        perferendis laborum, nemo ad magni. Quaerat illo consequuntur modi obcaecati et corporis amet cum rem
+        voluptatibus, voluptate quidem porro officiis eum, voluptas animi sit nihil nemo mollitia aliquid. Asperiores
+        nisi voluptatum beatae eum labore eius aspernatur? Illo excepturi dolorum optio similique iure! Nemo velit
+        reprehenderit modi odit soluta! Doloribus, ullam aut possimus quam amet voluptates totam quis distinctio ipsam
+        obcaecati sit! Quidem, similique laudantium. Id et dolor ipsa nihil quas magni, possimus, commodi error
+        asperiores molestias modi atque doloribus laborum repellat eos illum quis consequuntur nulla laboriosam saepe
+        eius iure assumenda. Quisquam harum qui et dignissimos, sed, dicta numquam, atque asperiores natus unde
+        consequatur quod commodi amet hic quam distinctio explicabo similique ad dolorum pariatur nesciunt reprehenderit
+        totam. Perspiciatis temporibus tempora quam, ullam deleniti illo iusto dolorem soluta, praesentium reiciendis
+        esse libero dolor quasi distinctio cum veritatis perferendis molestias. Doloribus iure, consequatur ea deleniti
+        neque, dolorem in voluptate ipsum est dolores, recusandae ducimus officiis obcaecati ad dicta consectetur
+        accusantium? Labore laborum, itaque similique ad eius nulla perspiciatis! Architecto quo labore, incidunt,
+        voluptate culpa ipsam et voluptatem soluta velit neque quasi sunt, commodi eveniet illo reprehenderit sed
+        asperiores nam! Voluptatibus, est! Reiciendis sunt, suscipit ab voluptas labore laboriosam repellendus obcaecati
+        sit commodi porro quos modi debitis tenetur libero id ipsum, animi sapiente expedita sed corrupti quibusdam
+        recusandae perspiciatis iste. Quas qui similique cupiditate error dolorum vero, eius recusandae illum mollitia
+        quam architecto. Alias ad doloribus quam aliquid iure doloremque consequuntur, mollitia, excepturi quisquam
+        deleniti perferendis consectetur in, reprehenderit maiores obcaecati natus nihil cupiditate voluptatum totam
+        possimus! Amet cumque saepe, cum eos nostrum quo beatae aliquam iusto obcaecati repellat maxime voluptatum
+        perferendis voluptatem. Consectetur, nostrum at quas minus rerum adipisci laudantium magni libero magnam in
+        pariatur eius impedit mollitia assumenda autem corrupti aliquid quia placeat iusto asperiores possimus eaque
+        eligendi. Quis eius excepturi illo dolorum. Fugit facilis nisi sunt nobis mollitia suscipit! Minima voluptates
+        expedita libero modi architecto at nostrum temporibus cupiditate vel consectetur, magnam reiciendis ad. Maxime
+        illo ea ipsum amet asperiores obcaecati tempora placeat nihil. Adipisci distinctio quidem nulla accusantium
+        omnis rem est praesentium velit molestiae dolorum dignissimos dolorem, accusamus repudiandae excepturi dolor
+        harum! Pariatur, omnis recusandae sint eaque provident soluta rerum, molestias perferendis veniam in nihil.
+        Velit veritatis quibusdam temporibus rerum cumque ipsam architecto porro eaque eos? Unde alias, dicta, odit esse
+        deleniti eum quasi ratione iure autem similique maiores fugit totam praesentium. Id inventore suscipit magnam
+        reprehenderit tenetur odit laborum sint velit fugiat! Est quidem, aspernatur dignissimos culpa vitae eaque,
+        reiciendis repudiandae voluptatem distinctio cupiditate iure perferendis fuga minima facilis eius cumque nemo
+        animi hic voluptates placeat quo aliquam corrupti? Provident eum illo voluptatem ullam alias nisi, autem
+        distinctio sapiente quos expedita. Rem aut cumque ratione dolorem? Amet velit a sit rem optio? Temporibus totam
+        magnam ducimus commodi itaque incidunt voluptatem mollitia deleniti nisi ab! Rerum nostrum harum qui aperiam
+        consequuntur? Facilis ducimus quae vitae illum magni rerum, dolore obcaecati aliquid nostrum officia
+        exercitationem itaque incidunt assumenda eveniet facere sapiente molestiae! Amet cumque perferendis, illum natus
+        totam eos reprehenderit inventore eaque, esse exercitationem in ex itaque aperiam omnis doloribus laboriosam
+        quaerat quae quisquam. Accusamus nam rerum, illum alias nisi similique in ipsa numquam possimus! Velit obcaecati
+        impedit, a et facere illum quaerat, ipsum sapiente quos vero aliquam accusantium quas, quasi soluta sit ea sunt
+        distinctio cupiditate! Tempora repellat iste numquam adipisci sint ad cupiditate aperiam neque. Voluptas, atque.
+        Velit minus beatae illo sapiente consequuntur eveniet amet tempora, perferendis asperiores nisi quam natus
+        doloremque tenetur, non reiciendis. Itaque officia quisquam, consequuntur cumque, delectus assumenda nesciunt
+        amet sequi atque quia porro facilis dicta tenetur veritatis perferendis, velit magni odit voluptates officiis
+        doloribus ratione? Nemo dolor, quaerat nesciunt assumenda error obcaecati, sapiente harum fugiat omnis saepe
+        quod ab quo similique recusandae, incidunt ipsa aspernatur quae blanditiis. Doloremque officia molestiae ipsum
+        facilis, error, tempora adipisci repellat eos praesentium non neque nisi tempore, ipsam culpa tenetur aperiam.
+        Eum cupiditate vitae nostrum odit deleniti optio distinctio cum quis, iste facere maxime natus enim doloribus
+        nisi, amet quo autem tenetur! Omnis, consequatur a nesciunt inventore doloribus accusantium rem eligendi velit
+        ipsam error. Molestiae repellat illum nemo aliquam? Excepturi minima, veritatis accusamus quam voluptas
+        blanditiis autem commodi. Accusamus nemo eveniet in reiciendis necessitatibus veniam non quos soluta repellat
+        minima, odit voluptates debitis rem. Similique, alias. Maiores tempora at debitis quidem, odio earum laboriosam
+        nulla ipsam, non vel aspernatur. Consequuntur, dolor nemo officia deleniti vel voluptate repudiandae maxime
+        tenetur quam repellat cum suscipit recusandae architecto accusantium, aliquid saepe nam fugit dolorem explicabo
+        nisi. Maxime corporis non ad officiis praesentium ullam veniam quibusdam, possimus doloremque expedita
+        repellendus accusantium commodi, voluptatem necessitatibus suscipit aperiam!</h3>
+      
+        <h1>Without z-index here brown box is under grey box and blue box is above grey box</h1>
+        <h2>With Z-Index we can make Any box to be under or above a Box</h2>
+        <div class="box box7"></div>
+        <div class="container">
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+        <div class="box box8"></div>
+        <h1>Z-Index Concept Only applied for Position</h1>
+
+        <h1> With Z-Index </h1>
+    <div class="box box9"></div>
+    <div class="container1">
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <div class="box box10"></div>
+</body>
+
+</html>
