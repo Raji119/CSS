@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Slide on Image Hover</title>
+    <style>
+        .container{
+            width:450px;
+            height: 300px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px black;
+            position: relative;
+            overflow: hidden;
+        }
+        .container img{
+            width: inherit;
+            height: inherit;
+            border-radius: 0 10px 10px 0;
+            transform: translateX(50%);
+            transition: all 0.5s;
+        }
+        .container:hover img{
+            transform: translateX(0%);
+        }
+        .container .content{
+            position: absolute;
+            top:0;
+            left:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(45deg,grey,lightblue);
+            width: 50%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 10px 0 0 10px;
+            transform: translateX(0%);
+            transition: all 0.5s;
+        }
+        .container:hover .content{
+            transform: translateX(-100%);
+        }
+        .container .content p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="Nature Image.jpg" alt="">
+        <div class="content">
+            <h2>Enjoy the Grace</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quod. Rerum expedita facere enim!
+                Voluptas corporis minima non consequatur minus?</p>
+        </div>
+    </div>
+</body>
+
+</html>
